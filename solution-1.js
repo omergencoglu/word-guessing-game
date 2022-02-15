@@ -24,7 +24,7 @@ while (incorrectChecker < 7) {
       }
     }
   } else {
-    console.log(`Sorry! There is no "${input}" in this word`);
+    console.log(`Sorry! There is no "${input}" in this word.`);
     incorrectChecker += 1;
   }
 
@@ -42,6 +42,7 @@ while (incorrectChecker < 7) {
 
   //Check if foundLetter includes all the letters in randomWord
   if (randomWord.split("").every((item) => foundLetters.includes(item))) {
-    console.log(`Yayy! You win. The word is "${randomWord}"`);
+    console.log(`Yayy! You win. The word is "${randomWord}".`);
+    break;
   }
 }
